@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top{
+    width: auto;
+    height: auto;
+    padding: calc(0%) calc(0%) calc(0%) calc(0%);
+}
+.header{
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    padding: calc(1%) calc(2%) calc(1%);
+}
+.logoandsearch{
+    display: flex;
+    align-items: center;
+    padding-left: calc(15%);
+}
+.logoandsearch div{
+    padding-left: 41px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(1%) calc(0%) calc(1%) calc(70%);
+}
+.menu div{
+    padding-left: 33px;
+}
+
+.banner{
+    display: flex;
+    background-color: #F1E4E6;
+}
+.photo_men{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
