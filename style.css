@@ -5,7 +5,7 @@
 .top{
     width: auto;
     height: auto;
-    padding: calc(0%) calc(0%) calc(0%) calc(0%);
+    margin: calc(0%) calc(0%) calc(0%) calc(0%);
 }
 .header{
     background-color: #222222;
@@ -16,19 +16,19 @@
 .logoandsearch{
     display: flex;
     align-items: center;
-    padding-left: calc(15%);
+    margin-left: calc(10%);
 }
 .logoandsearch div{
-    padding-left: 41px;
+    margin-left: 41px;
 }
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: calc(1%) calc(10%) calc(1%) calc(60%);
+    margin: calc(1%) calc(10%) calc(1%) calc(60%);
 }
 .menu div{
-    padding-left: 33px;
+    margin-left: 33px;
 }
 
 .banner{
@@ -46,19 +46,29 @@
             url("/fonts/Lato-Black.ttf");
     font-weight: black;
 }
+.brend::before{
+    content:"";
+    display: flex;
+    width: 12px;
+    height: 92px;
+    background-color: #F16D7F;
+    margin: 0 0 0 -16px;
+}
 .brend{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.lien{
-    width: 12px;
-    height: 92px;
-    background-color: #F16D7F;
-}
 .text_brend{
     font-family: "Lato", sans-serif;;
     font-weight: black;
     font-size: 24px;
-    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-items: baseline;
+    margin-left: 14px;
+}
+.text_brend span{
+    color: #F16D7F;
+    
 }
