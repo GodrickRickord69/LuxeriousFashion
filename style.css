@@ -2,19 +2,25 @@
     margin: 0px;
     padding: 0px;
 }
+.body{
+    width: auto;
+    height: auto;
+}
 .top{
     width: auto;
     height: auto;
-    margin: calc(0%) calc(0%) calc(0%) calc(0%);
+    /*margin: calc(0%) calc(0%) calc(0%) calc(0%);*/
 }
 .header{
     background-color: #222222;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: calc(0%) calc(2%) calc(0%);
+    /*margin: calc(0%) calc(2%) calc(0%);*/
 }
 .logoandsearch{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: calc(10%);
 }
@@ -23,6 +29,7 @@
 }
 .menu{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: calc(1%) calc(10%) calc(1%) calc(60%);
@@ -33,10 +40,15 @@
 
 .banner{
     display: flex;
+    flex-wrap: wrap;
     background-color: #F1E4E6;
+    width: auto;
+    height: auto;
+
 }
 .photo_men{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -49,6 +61,7 @@
 .brend::before{
     content:"";
     display: flex;
+    flex-wrap: wrap;
     width: 12px;
     height: 92px;
     background-color: #F16D7F;
@@ -56,6 +69,7 @@
 }
 .brend{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -64,6 +78,7 @@
     font-weight: black;
     font-size: 24px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-items: baseline;
     margin-left: 14px;
@@ -71,4 +86,35 @@
 .text_brend span{
     color: #F16D7F;
     
+}
+.offer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 65px;
+    /*display: grid;
+    grid-template-columns: 488px 488px 488px;
+    grid-template-rows: auto auto;
+    row-gap: 30px;
+    column-gap: 30px;*/
+}
+
+.offer_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: calc(1.5%);
+    margin-left: calc(1.5%);
+}
+#long{
+    grid-column: span 3;
+}
+.offer_text{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(4%);
+
 }
