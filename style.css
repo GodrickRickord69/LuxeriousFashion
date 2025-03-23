@@ -2,42 +2,51 @@
     margin: 0px;
     padding: 0px;
 }
+
 .body{
     width: auto;
     height: auto;
 }
+
 .top{
     width: auto;
     height: auto;
-    /*margin: calc(0%) calc(0%) calc(0%) calc(0%);*/
 }
+
 .header{
     background-color: #222222;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    min-height: 75px;
-    /*margin: calc(0%) calc(2%) calc(0%);*/
-    
+    max-height: 75px;
+    padding: 10px 10px 10px 10px;    
 }
+
 .logoandsearch{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: calc(10vw);
-    
+    margin-left: 15em;    
 }
+
 .logoandsearch div{
     margin-left: 30px;
 }
+
+.logo:hover{
+    cursor: pointer;
+}
+
 .menu{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-left: 1200px;
-    
+    flex-direction: row;
+    padding-left: 70em;
+    margin-right: 10%;
 }
+
 .menu div{
     margin-left: 33px;
 }
@@ -46,22 +55,23 @@
     display: flex;
     flex-wrap: wrap;
     background-color: #F1E4E6;
-    width: auto;
-    height: auto;
-
+    padding-left: 10em;
 }
+
 .photo_men{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
+
 @font-face{
     font-family: "Lato", sans-serif;;
     src: local("Lato-Black.ttf"),
             url("/fonts/Lato-Black.ttf");
     font-weight: black;
 }
+
 .text_brend::before{
     content:"";
     display: flex;
@@ -72,12 +82,14 @@
     margin: 0 0 -92px -26px;
     position: relative;
 }
+
 .brend{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
+
 .text_brend{
     font-family: "Lato", sans-serif;
     font-weight: black;
@@ -88,20 +100,20 @@
     justify-items: baseline;
     margin-left: 63px;
 }
+
 .text_brend span{
     color: #F16D7F;
     
 }
+
 .offer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 65px;
-    /*display: grid;
-    grid-template-columns: 488px 488px 488px;
-    grid-template-rows: auto auto;
-    row-gap: 30px;
-    column-gap: 30px;*/
+    padding-top: 5%;
+    padding-left: 1%;
+    max-width: 100%;
+    min-height: 470px;
 }
 
 .offer_box{
@@ -109,14 +121,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: calc(1.5%);
-    margin-left: calc(1.5%);
-    max-width: 100%;
-    flex: 0 1 auto;
+    margin-bottom: 30px;
+    margin-left: 30px;
 }
+
 #long{
     grid-column: span 3;
 }
+
 .offer_text{
     position: absolute;
     display: flex;
@@ -128,22 +140,32 @@
     font-weight: black;
     z-index: 2;
 }
+
 .offer_text h1{
     color: #F16D7F;
 }
+
 .offer_text p{
     color: #FFFFFF;
     font-size: 16px;
 }
+
 #long p{
     margin-top: -40px !important;
 }
+
+.offer_imag{
+    position: relative;
+    display: inline-block;
+}
+
 .offer_imag img{
     display: block;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
-.offer_box::after{
+
+.offer_imag::after{
     content: '';
     position: absolute;
     top: 0;
@@ -153,6 +175,7 @@
     background:rgba(33, 22, 22, 0.7);
     pointer-events: none;
 }
+
 .products{
     display: flex;
     flex-wrap: wrap;
@@ -162,26 +185,32 @@
     max-width: 80vw;
     padding-left: 11vw;
 }
+
 .products_heading{
     margin-bottom: 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .products_heading p{
     margin-top: 6px;
 }
+
 .products p{
     color:#9F9F9F;
 }
+
 .price{
     color:#F16D7F !important;
 }
+
 .items_products{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;   
 }
+
 .items_products article{
     display: block;
     justify-content: center;
@@ -192,36 +221,48 @@
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
 .items_products>article>img{
     max-width: 360px;
     min-height: auto;
 
 }
+
 .items_products>article>p{
     margin: 16px;
 }
+
 .items_products>article>h5{
     margin: 16px;
 }
+
 .imag_products_2{
     background-color:#F7E4E2;
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
+
 .imag_products_2 img{
     margin-top: 9px;
     margin-bottom: 11px;
 }
+
 .browse_all_product{
     margin-top: 48px;
     margin-bottom: 60px;
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    appearance: none;
     color: #F26376;
-    border-color: #F26376;
+    border: 1px solid transparent;
+    border-color: #F26376 ;
     background-color: #FFFFFF;
     width: 212px;
     height: 48px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#F26376;
+    color: #FFFFFF
 }
