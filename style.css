@@ -5,12 +5,14 @@
 
 .body{
     width: auto;
-    height: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .top{
     width: auto;
-    height: auto;
+    height: 100%;
 }
 
 .header{
@@ -268,6 +270,8 @@
 .browse_all_product:hover{
     background-color:#F26376;
     color: #FFFFFF;
+    transition: all 0.3s ease;
+
 }
 .feature{
     display: flex;
@@ -427,9 +431,5 @@ footer{
     gap: 35vw;
     align-items: center;
     justify-content: center;
-}
-
-.icon:hover{
-    background-color:#F26376;
-    color: #FFFFFF;
+    margin-top: auto;
 }
