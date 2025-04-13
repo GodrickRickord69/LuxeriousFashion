@@ -8,11 +8,23 @@
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    transform: translate(-50%, -50%);
+}
+
+:root{
+    --base-font-size: 16px;
 }
 
 .top{
     width: auto;
     height: 100%;
+}
+
+@font-face{
+    font-family: "Lato", sans-serif;
+    src: local("Lato-Black.ttf"),
+            url("/fonts/Lato-Black.ttf");
+    font-weight: black;
 }
 
 .header{
@@ -34,11 +46,9 @@
 
 .logoandsearch div, main{
     margin-left: 2.5rem;
-}
-
-.logo:hover{
     cursor: pointer;
 }
+
 
 .menu{
     display: flex;
@@ -54,6 +64,68 @@
     margin-left: 33px;
     color: #FFFFFF;
     font-family: "Lato", sans-serif;
+    cursor: pointer;
+}
+
+.popup_menu {
+    all: unset;
+    position: fixed;
+    /*top: 0;
+    right: -300px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 232px;
+    min-height: calc(634px/var(--base-font-size)*1rem);
+    background: #FFFFFF;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    font-family: "Lato", sans-serif;
+    padding: 1rem;
+
+}
+
+.popup_menu nav{
+    color: inherit;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #E05C6E;
+    margin: 1rem;
+    font-weight: normal;
+}
+
+.popup_menu ul, a{
+    all: unset;
+    color: #9F9F9F;
+    list-style: none;
+    text-decoration: none;
+}
+
+.popup-menu.active {
+    right: 0;
+}
+
+.popup-menu::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.popup-menu.active::before {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 
@@ -82,13 +154,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
-
-@font-face{
-    font-family: "Lato", sans-serif;
-    src: local("Lato-Black.ttf"),
-            url("/fonts/Lato-Black.ttf");
-    font-weight: black;
 }
 
 .text_brend::before{
