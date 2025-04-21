@@ -70,12 +70,12 @@
 .popup_menu {
     all: unset;
     position: fixed;
-    /*top: 0;
-    right: -300px;*/
+    top: 0;
+    right: -300px;
+    /*right: 0;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    align-items: center;
     flex-direction: column;
     width: 232px;
     min-height: calc(634px/var(--base-font-size)*1rem);
@@ -85,29 +85,56 @@
     z-index: 1000;
     font-family: "Lato", sans-serif;
     padding: 1rem;
-
 }
 
-.popup_menu nav{
+.popup_menu h4{
+    margin: 1rem 0rem 0rem 1rem;
+}
+
+.one_degree {
+    color: #E05C6E;
+    margin: 1rem 0rem 0rem 1rem;
+}
+
+.tow_level li{
+    margin: 0.5rem 0rem 0rem 1rem;
+}
+
+.tow_level li:hover{
+    background-color: #E05C6E;
+}
+
+.popup_menu nav {
     color: inherit;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #E05C6E;
-    margin: 1rem;
     font-weight: normal;
 }
 
-.popup_menu ul, a{
+.popup_menu ul{
     all: unset;
     color: #9F9F9F;
     list-style: none;
     text-decoration: none;
+
 }
 
-.popup-menu.active {
+.popup_menu a{
+    all: unset;
+    color: #9F9F9F;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu_button:active ~ .popup_menu{
     right: 0;
+}
+
+.popup_menu a:hover{
+    color: #FFFFFF;
 }
 
 .popup-menu::before {
@@ -122,12 +149,6 @@
     pointer-events: none;
     transition: opacity 0.3s;
 }
-
-.popup-menu.active::before {
-    opacity: 1;
-    pointer-events: auto;
-}
-
 
 .purchase_counter{
     position: relative;
