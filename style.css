@@ -56,23 +56,26 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-left: 55rem;
+    margin-left: 60rem;
     margin-right: 1rem;
 }
 
-.menu div{
+.menu div, label{
     margin-left: 33px;
     color: #FFFFFF;
     font-family: "Lato", sans-serif;
     cursor: pointer;
 }
 
+.menu_toggle{
+    display: none;
+}
+
 .popup_menu {
     all: unset;
     position: fixed;
-    top: 0;
+    top: auto;
     right: -300px;
-    /*right: 0;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -129,8 +132,13 @@
     cursor: pointer;
 }
 
-.menu_button:active ~ .popup_menu{
+.menu_toggle:checked~.popup_menu {
     right: 0;
+}
+
+.menu_toggle:checked~.popup_menu::before {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .popup_menu a:hover{
@@ -184,7 +192,7 @@
     width: 12px;
     height: 92px;
     background-color: #F16D7F;
-    margin: 0 0 -92px -26px;
+    margin: 0 0 -95px -26px;
     position: relative;
 }
 
@@ -198,7 +206,7 @@
 .text_brend{
     font-family: "Lato", sans-serif;
     font-weight: black;
-    font-size: 24px;
+    font-size: 32px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
