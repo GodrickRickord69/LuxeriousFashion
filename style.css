@@ -355,6 +355,7 @@
     margin: 16px;
 }
 
+
 .product-overlay{
     position: absolute;
     top: 0;
@@ -371,10 +372,13 @@
 }
 
 .cart-icon {
-    font-size: 32px;
+    font-size: 14px;
     color: white;
     transform: scale(0.8);
     transition: transform 0.3s ease;
+    border-color: #F8F8F8;
+    border: 2px solid;
+    padding: auto;
 }
 .imag_products{
     position: relative;
