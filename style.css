@@ -27,9 +27,7 @@
     font-weight: black;
 }
 
-img{
-    max-width: 100%;
-}
+
 
 .header{
     background-color: #222222;
@@ -207,6 +205,10 @@ img{
     align-items: center;
 }
 
+.photo_men>img{
+    width: 100%;
+}
+
 .text_brend::before{
     content:"";
     display: flex;
@@ -242,7 +244,7 @@ img{
     
 }
 
-@media(max-width: 767px){
+@media(max-width: 768px){
 .banner{
     flex-wrap: inherit;
 }
@@ -257,15 +259,22 @@ img{
 }
 
 
-
 .offer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 5%;
-    padding-left: 1%;
+    padding-top: 65px;
+    /* padding-left: 1%; */
     max-width: 100%;
-    min-height: 470px;
+    /* min-height: 470px; */
+    gap: 30px;
+}
+
+.offer_boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .offer_box{
@@ -273,12 +282,14 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px;
-    margin-left: 30px;
+    max-width: 360px;
+    height: inherit;
+    /* margin-bottom: 30px;
+    margin-left: 30px; */
 }
 
 #long{
-    grid-column: span 3;
+    max-width: 100%;
 }
 
 .offer_text{
@@ -313,11 +324,11 @@ img{
 
 .offer_imag img{
     display: block;
-    max-width: 100%;
+    min-width: 100%;
     height: auto;
 }
 
-.offer_box::after{
+.offer_imag::after{
     content: '';
     position: absolute;
     top: 0;
@@ -328,7 +339,44 @@ img{
     pointer-events: none;
 }
 
+@media(max-width: 768px){
+    .offer{
+        gap: 19px;
+    }
 
+
+    .offer_box{
+        max-width: 30%;
+    }
+
+
+    .offer_boxes{
+        gap: 19px;
+    }
+
+
+    .offer_boxes img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    #long{
+        max-width: 50%;
+    }
+
+    #long img{
+        max-width: 95.333vw;
+        height: auto;
+    }
+
+    .offer_text {
+        margin-top: 58px
+    }
+
+    #long p{
+        margin-top: -33px !important;
+    }
+}
 
 .products{
     display: flex;
