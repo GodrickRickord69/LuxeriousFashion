@@ -554,10 +554,8 @@ width: 96.333vw;
     justify-content: center;
     background-color: #222222;
     width: auto;
-    /* min-height: 341px; */
+    min-height: 341px;
     color: #FFFFFF;
-    padding-top: 103px;
-    padding-bottom: 104px;
 }
 
 .feature figure{
@@ -571,6 +569,7 @@ width: 96.333vw;
     font-style: normal;
     max-width: 360px;
     margin-left: 30px;
+    margin-bottom: revert;
 }
 .feature img{
     margin-bottom: 40px;
@@ -580,12 +579,19 @@ width: 96.333vw;
     margin-bottom: 16px;    
 }
 
+.feature_box p{
+    text-align: center;
+}
 
 
 @media(max-width: 768px){
     .feature{
         min-height: 610px;
+        padding-top: 48px;
+        padding-bottom: 64px;
     }
+
+
 }
 
 
