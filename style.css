@@ -605,10 +605,10 @@ width: 96.333vw;
     font-family: "Lato", sans-serif;
     font-size: 20px;
     overflow: hidden;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background: url('svg/subscribe_background.svg') center/cover no-repeat;
-    min-height: 500px;
-    gap: 20vw;
+    min-height: 26.042vw;
+    gap: 11.615vw;
 }
 
 .subscribe_text{
@@ -712,23 +712,34 @@ width: 96.333vw;
 
 
 
+@media(max-width: 768px){
+    .subscribe{
+        min-height: 614px;
+        background-position-x: -508px;
+        background-size: 380%;
+        flex-direction: column;
+    }
+}
+
+
 footer{
     display: flex;
     flex-wrap: wrap;
     background-color: #222224;
-    padding: 25px 0px 25px 0px;
+    padding: 20px 0 20px 0;
     color: #FFFFFF;
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    gap: 38%;
+    gap: 34.115vw;
     font-weight: lighter;
     align-items: center;
     justify-content: flex-start;
     margin-top: auto;
+    max-height: 42px;
 }
 
 footer p{
-    margin-left: 27rem;
+    margin-left: 25.313vw;
 }
 
 .icons{
@@ -753,4 +764,15 @@ footer p{
 
 .backgraund_icon:hover img{
     filter: brightness(0) invert(1);
+}
+
+
+@media(max-width: 768px){
+    footer{
+        gap:39.714vw;
+    }
+
+    footer p{
+        margin-left: 1.667vw;
+    }
 }
